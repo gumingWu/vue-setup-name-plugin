@@ -9,7 +9,7 @@ export const unplugin = createUnplugin((options) => {
     transform(code: string) {
       const show = code.slice(0, 50);
       console.log(show);
-      return code;
+      return code.replace(/<template>/, `<template><div>Injected</div>`);
     },
   };
 });
