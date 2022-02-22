@@ -13,3 +13,8 @@ export const unplugin = createUnplugin((options) => {
     },
   };
 });
+
+export const vitePlugin = unplugin.vite;
+export const rollupPlugin = unplugin.rollup;
+export const webpackPlugin = unplugin.webpack;
+export const esbuildPlugin = unplugin.esbuild;
