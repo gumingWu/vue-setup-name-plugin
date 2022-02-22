@@ -16,7 +16,6 @@ export const unplugin = createUnplugin((options) => {
                 const result = compileScript(descriptor, { id });
                 const name = result.attrs.name;
                 const lang = result.attrs.lang;
-                console.log(name, lang);
                 if (name) {
                     str().appendLeft(0, `<script ${lang ? `lang="${lang}"` : ""}>
     import { defineComponent } from 'vue'
