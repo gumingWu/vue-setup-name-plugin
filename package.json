@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "module": "esm/index.js",
   "scripts": {
-    "build:cjs": "tsc --outDir lib",
+    "build:cjs": "tsc -m commonjs --outDir lib",
     "build:es": "tsc -m esNext --outDir esm",
     "build": "npm run build:cjs && npm run build:es"
   },
