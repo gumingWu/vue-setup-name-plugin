@@ -7,8 +7,7 @@ export const unplugin = createUnplugin((options) => {
       return id.endsWith(".vue");
     },
     transform(code: string) {
-      const show = code.slice(0, 50);
-      console.log(show);
+      console.log(code);
       return code.replace(/<template>/, `<template><div>Injected</div>`);
     },
   };
