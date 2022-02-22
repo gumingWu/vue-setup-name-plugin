@@ -2,9 +2,12 @@
   "name": "vue-setup-name-plugin",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:cjs": "tsc --outDir lib",
+    "build:es": "tsc -m esNext --outDir esm",
+    "build": "npm run build:cjs && npm run build:es"
   },
   "keywords": [],
   "author": "gaaming",
@@ -14,5 +17,13 @@
   "license": "ISC",
   "dependencies": {
     "unplugin": "^0.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.19",
+    "esbuild": "^0.14.23",
+    "rollup": "^2.68.0",
+    "typescript": "^4.5.5",
+    "vite": "^2.8.4",
+    "webpack": "^5.69.1"
   }
 }
