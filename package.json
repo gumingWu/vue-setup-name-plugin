@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "gaaming",
+  "repository": {
+    "github": "https://github.com/gumingWu/vue-setup-name-plugin"
+  },
   "license": "ISC",
   "dependencies": {
     "unplugin": "^0.3.2"
