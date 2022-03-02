@@ -13,6 +13,10 @@
     "setup",
     "name"
   ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "author": "gaaming",
   "repository": {
     "type": "git",
